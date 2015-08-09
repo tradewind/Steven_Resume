@@ -1,0 +1,261 @@
+body {
+	background: #fff;
+	width: 1080px;
+	margin: 0 auto;
+	font-size: 40px;
+	font-family: "Helvetica";
+	color: #2D4436;
+}
+
+.header, .page, .footer {
+	padding: 20px;
+}
+
+.header {
+	background: #2D4436;
+	color: white;
+	top: 0;
+	height: 90px;
+	width: 1040px;
+	margin-bottom: 3px;
+  
+  /* rgba is a different way of expressing color in
+     terms of its RGB components with Alpha (transparency) */
+	-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
+  
+	text-shadow: 1px 1px 0 #000;
+}
+
+.footer {
+	background: #2D4436;
+	color: white;
+	padding: 10px 20px;
+}
+
+.header .name {
+    float: left;
+    width: 50%;
+}
+
+.header h1 {
+	font-size: 0.8em;
+	margin: 0;
+}
+
+.header h2 {
+	font-family: "Georgia", Serif;      
+	font-weight: normal;
+	font-style: italic;
+	font-size: 0.5em;
+	color: #A5BA93;
+}
+
+.header dl {
+    float: right;
+    margin: 0;
+}
+
+.header dl dt {
+	color: #A5BA93;
+	font-size: 0.4em;
+}
+
+.header dl dd {
+    margin: 0 0 10px 0;
+	font-size: 0.4em;
+}
+
+.page {
+	background: #EFEFEF;
+	color: #2D4436;
+}
+
+.page a {
+	text-decoration: none;
+	color: #2D4436;
+}
+
+.page a:hover {
+	text-decoration: underline;
+	color: #407A52;
+}
+
+.page p {
+	font-size: 0.4em;
+	line-height: 24px;
+	text-indent: 2em;
+}
+
+.page h3 {
+    font-size: 0.7em;
+    line-height: 36px;
+    margin: 0 -20px 0 -20px;
+    padding: 0 20px 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.exp h3 small {
+	font-size: 0.6em;
+	font-weight: normal;
+	color: #407A52;
+	
+}
+
+.page h4 {
+    float: left;
+	font-size: 0.5em;
+	margin: 20px 0 5px 0;
+}
+
+.ski h4 {
+	clear: left;
+}
+
+.edu h4 small {
+	font-size: 0.8em;
+	font-weight: normal;
+	color: #407A52;
+}
+
+.page h5 {
+    float: right;
+	font-size: 0.4em;
+	margin: 20px 0 0 0;
+}
+
+.page h6 {
+    clear: right;
+	float: right;
+	margin: 0;
+	font-size: 0.35em;
+	color: #407A52;
+}
+
+.page ul, .page ol {
+    clear: both;
+	width: 75%;
+    margin: 0 0 10px 0;
+}
+
+.page ul li, .page ol li {
+	font-size: 0.4em;
+	line-height: 30px;
+}
+
+.ski ul, .ski ol {
+	width: 90%;
+}
+.ski h5 {
+	float: right;
+	margin: -2px -2px 0 0;
+	background: #A5BA93;
+	padding: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+.ski h6 {
+	float: left;
+	font-size: 0.4em;
+	margin: 15px 0 5px 20px;
+	border-bottom: 1px dotted #407A52;
+}
+
+ul.lineup {
+    list-style-type: none;
+	width: 100%;
+	margin: 0 0 20px 0;
+}
+
+ul.lineup li {
+    float: left;
+    margin: 0 5px 10px 0;
+	font-size: 0.35em;
+	line-height: normal;
+    background: #A5BA93;
+    padding: 4px; 
+    border-radius: 3px;
+}
+
+/*  This div class is the container for our menu.
+    It defines attributes for everything inside. */
+div.tabbed-menu {
+    font-size: 0.4em;
+    width: 1080px;
+}
+
+/*  This ul class defines how your menu options
+    will be arranged and also gives us a nice 
+    dividing line between the menu and the content. */
+ul.tabs {
+    text-align: left;
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #407A52;
+    border-bottom: 1px solid #CCC;
+}
+
+/*  This defines the look of the individual tabs of 
+    your menu when they are contained in a tabs class ul */
+ul.tabs li {
+    margin-bottom: -1px;
+    padding: 3px 10px 0 10px;
+    border: 1px solid #CCC;
+	width: 90px;
+	color: #A5BA93;
+    background: #FFFFFF;
+	/*#EFEFEF*/
+    display: inline-block;
+	text-align: center;
+	line-height: 30px;
+    border-top-left-radius: 6px; 
+    border-top-right-radius: 6px;
+}
+/* This defines what a tab should look like when selected */
+ul.tabs li.selected {
+	color: #2D4436;
+    background: #EFEFEF;
+	/*#2D4436;*/
+    border-bottom-color: transparent;
+
+}
+/* This defines how a tab looks when your mouse hovers above it */
+ul.tabs li:hover {
+    color: #2D4436;
+    cursor: pointer;
+    background: #EFEFEF;
+	/*#2D4436;*/
+}
+
+div.page {
+	display: none;
+}
+
+div.default {
+	display: block;
+}
+
+.block  {
+	float: left;
+	border: 3px solid #A5BA93;
+	border-radius: 10px;
+	width: 330px;
+	height: 210px;
+	margin: 0 0 16px 16px;
+	padding: 0;
+}
+
+.left {
+	clear: both;
+	margin-left: 0;
+}
+
+img.photo {
+	float: right;
+	width: 150px;
+	margin: 0 0 5px 5px;
+}
